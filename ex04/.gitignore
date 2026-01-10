@@ -1,0 +1,4 @@
+*.o
+*.replace
+better-sed
+*.swp
