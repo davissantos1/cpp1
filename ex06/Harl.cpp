@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:17:10 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/10 14:18:47 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/10 14:24:46 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ void	Harl::complain( std::string level )
 		case 4:
 			(this->*errorPtr)();
 			break ;
+		default:
+			std::cout << "[ Probably complaining about insignificant problems ]\n";
 	}
 }
 
