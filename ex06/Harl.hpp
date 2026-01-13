@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:14:26 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/10 14:04:31 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/13 20:38:35 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 enum e_menu
 {
-	EXIT,
+	OTHER,
 	DEBUG,
 	INFO,
 	WARNING,

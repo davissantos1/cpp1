@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:17:10 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/10 14:24:46 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/13 20:40:25 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,31 +14,34 @@
 
 void	Harl::complain( std::string level )
 {
-	size_t	input;
+	enum 	e_menu input = OTHER;
 	void	(Harl::*debugPtr)( void ) = &Harl::debug;
 	void	(Harl::*infoPtr)( void ) = &Harl::info;
 	void	(Harl::*warningPtr)( void ) = &Harl::warning;
 	void	(Harl::*errorPtr)( void ) = &Harl::error;
 	
-	std::map<std::string, e_menu> menuMap;
-	menuMap["DEBUG"] = DEBUG;
-	menuMap["INFO"] = INFO;
-	menuMap["WARNING"] = WARNING;
-	menuMap["ERROR"] = ERROR;
-	input = menuMap[level];
+	input = ("DEBUG" == level) ? DEBUG : input;
+	input = ("INFO" == level) ? INFO : input;
+	input = ("WARNING" == level) ? WARNING : input;
+	input = ("ERROR" == level) ? ERROR : input;
 	switch (input)
 	{
-		case 1:
-			(this->*debugPtr)(); // fall through
-		case 2:
-			(this->*infoPtr)(); // fall through
-		case 3:
-			(this->*warningPtr)(); // fall through
-		case 4:
-			(this->*errorPtr)();
-			break ;
-		default:
+		// fallthrough
+		case OTHER:
 			std::cout << "[ Probably complaining about insignificant problems ]\n";
+			break ;
+		// fallthrough
+		case DEBUG:
+			(this->*debugPtr)();
+		// fallthrough
+		case INFO:
+			(this->*infoPtr)();
+		// fallthrough
+		case WARNING:
+			(this->*warningPtr)();
+		// fallthrough
+		case ERROR:
+			(this->*errorPtr)();
 	}
 }
 
