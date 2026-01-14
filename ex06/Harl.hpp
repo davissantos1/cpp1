@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:14:26 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/13 20:38:35 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:55:10 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 #include <iostream>
 #include <limits>
-#include <map>
 
 enum e_menu
 {
@@ -34,7 +33,7 @@ class	Harl
 		void	warning( void );
 		void	error( void );
 	public:
-		Harl() {};
+		Harl();
 		void complain( std::string level );
 };
 

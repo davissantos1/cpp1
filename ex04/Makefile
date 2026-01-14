@@ -1,7 +1,7 @@
 # Variables
 
 CC= c++
-CFLAGS= -Wall -Wextra -Werror
+CFLAGS= -Wall -Wextra -Werror -std=c++98
 SRC= main.cpp 
 OBJ= $(SRC:.cpp=.o)
 NAME= better-sed
@@ -41,4 +41,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re debug all all all all all re debug all all
+.PHONY: all clean fclean re debug 

@@ -1,7 +1,7 @@
 # Variables
 
 CC= c++
-CFLAGS= -Wall -Wextra -Werror
+CFLAGS= -Wall -Wextra -Werror -std=C++98
 SRC= main.cpp 
 OBJ= $(SRC:.cpp=.o)
 NAME= brain

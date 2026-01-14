@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:19:34 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/09 21:21:43 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:42:39 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class	Zombie
 		std::string _name;
 
 	public:
-		Zombie() {};
+		Zombie();
 		Zombie( std::string name );
 		~Zombie();
 

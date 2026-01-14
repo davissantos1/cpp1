@@ -6,11 +6,15 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:17:10 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/13 20:06:50 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:53:34 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
+
+Harl::Harl()
+{
+}
 
 void	Harl::complain( std::string level )
 {

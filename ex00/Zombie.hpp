@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/08 15:19:34 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/09 20:58:40 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/14 17:37:18 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ class	Zombie
 		~Zombie();
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie*	newZombie( std::string name );
+void	randomChump( std::string name );
 
 #endif
