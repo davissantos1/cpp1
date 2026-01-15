@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:17:10 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/14 17:53:34 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/15 18:18:11 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	Harl::complain( std::string level )
 	input = ("ERROR" == level) ? ERROR : input;
 	switch (input)
 	{
-		case EXIT:
+		default:
 			break ;
 		case DEBUG:
 			(this->*debugPtr)();

@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 11:17:10 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/14 17:55:27 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/15 18:16:56 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,7 @@ void	Harl::complain( std::string level )
 	input = ("ERROR" == level) ? ERROR : input;
 	switch (input)
 	{
-		// fallthrough
-		case OTHER:
+		default:
 			std::cout << "[ Probably complaining about insignificant problems ]\n";
 			break ;
 		// fallthrough
