@@ -6,7 +6,7 @@
 /*   By: dasimoes <dasimoes@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 07:58:36 by dasimoes          #+#    #+#             */
-/*   Updated: 2026/01/15 18:26:27 by dasimoes         ###   ########.fr       */
+/*   Updated: 2026/01/24 17:49:23 by dasimoes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	read_and_replace(std::string fileName, char **av)
 
 	s1 = av[2];
 	s2 = av[3];
-	std::ifstream	inFile(av[2]);
+	std::ifstream	inFile(av[1]);
 	std::ofstream	outFile(fileName.c_str());
 	if (!inFile.is_open() || !outFile.is_open())
 	{
